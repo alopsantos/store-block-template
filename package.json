@@ -15,5 +15,8 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "add": "^2.0.6",
+    "global": "^4.4.0",
+    "vtex": "^2.121.1"
   }
 }

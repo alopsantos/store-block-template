@@ -3,23 +3,23 @@ import {FiAlignLeft, FiPhone, FiMessageSquare,FiUser, FiMail} from "react-icons/
 
 import MenuItem from "./components/menu-item";
 
-import {Container, Containermenu} from './styles';
+import {Container, Containerlistitem, Containerchildren} from './styles';
 
 interface CountdownProps {}
 
 const Countdown: StorefrontFunctionComponent<CountdownProps> = ({children}) => {
   return (
     <Container className="teste">
-      <Containermenu>
+      <Containerlistitem>
         <MenuItem icon={FiAlignLeft} />
         <MenuItem icon={FiUser} />
         <MenuItem icon={FiMessageSquare} />
         <MenuItem icon={FiPhone} />
         <MenuItem icon={FiMail} />
-      </Containermenu>
-      <div>
+      </Containerlistitem>
+      <Containerchildren>
         {children}
-      </div>
+      </Containerchildren>
     </Container>
   );
 };

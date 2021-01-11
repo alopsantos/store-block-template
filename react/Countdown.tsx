@@ -7,7 +7,7 @@ import {Container, Containermenu} from './styles';
 
 interface CountdownProps {}
 
-const Countdown: StorefrontFunctionComponent<CountdownProps> = ({}) => {
+const Countdown: StorefrontFunctionComponent<CountdownProps> = ({children}) => {
   return (
     <Container className="teste">
       <Containermenu>
@@ -18,7 +18,7 @@ const Countdown: StorefrontFunctionComponent<CountdownProps> = ({}) => {
         <MenuItem icon={FiMail} />
       </Containermenu>
       <div>
-        oi
+        {children}
       </div>
     </Container>
   );
